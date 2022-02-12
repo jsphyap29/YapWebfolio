@@ -1,0 +1,240 @@
+.progress .progress-bar {
+    animation-name: animateBar;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: .8s;
+}
+@keyframes animateBar {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0);}
+} 
+
+@keyframes slideInRight {
+    0% {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        opacity: 0;
+    }
+
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideOutRight {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+
+    to {
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+        opacity: 0;
+    }
+}
+
+.progress {
+    margin: 30px 0;
+}
+
+* {
+    margin: 0;
+    padding: 5;
+    box-sizing: border-box;
+}
+
+
+.custom-section {
+    height: 100vh;
+    margin: 0;
+    scroll-snap-align: start;
+    display: flex;
+}
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.nav-item a{
+    margin: 0 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    
+}
+
+.nav-item2 a{
+    margin: 0 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(206, 206, 206);
+    
+}
+
+.nav-item a:hover {
+    color: rgb(87, 69, 69);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-item2 a:hover {
+    color: rgb(80, 77, 77);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar.custom-nav {
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+    
+    
+}
+
+
+
+
+.BG {
+    background-image: url(bg1.jpg.png);
+    height: 100%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+
+}
+
+.footBG {
+    background-image: url(footbg.png);
+    height: 100%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+
+}
+
+.skills-cont p{
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 40px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.prog-cont p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/*SCROLL TOP*/
+
+.scrollTop {
+    position: fixed;
+    bottom: 125px;
+    right: 0px;
+    z-index: 999;
+    cursor: pointer;
+    opacity: 0;
+    animation: slideOutRight 1s cubic-bezier(.77,0,.175,1) 1;
+    
+}
+
+.scrollTop:hover {
+    color: rgb(139, 139, 139);
+    transition: all 0.3s ease-in-out;
+}
+
+.scrollTop i {
+    display: flex;
+    font-size: 25px;
+    background-color: rgb(87, 69, 69);
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+}
+
+.visible {
+    opacity: 1;
+    animation: slideInRight 1s cubic-bezier(.77,0,.175,1) 1;
+}
+
+.about-content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.about-img {
+    
+    align-items: center;
+    background: #fff;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.works-cont {
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.down {
+    color: rgb(0, 0, 0);
+}
+
+.footer i {
+    font-size: 50px;
+}
+
+
+
+/*deleteafter*/
+
+.forms {
+    justify-content: center;
+    color: white;
+    padding: 50px;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.caro {
+    height: 100vh;
+    align-items: center;
+}
+
+.some {
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.footer-content-below {
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
