@@ -126,7 +126,7 @@
 }
 
 .BG {
-  background-image: url("/webfolioyap/bg1.png");
+  background-image: url("bg1.png");
   height: 100%;
   position: relative;
   background-position: center;
@@ -136,7 +136,7 @@
 }
 
 .footBG {
-  background-image: url("/webfolioyap/footbg.png");
+  background-image: url("footbg.png");
   height: 100%;
   position: relative;
   background-position: center;
