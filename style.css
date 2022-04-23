@@ -293,7 +293,14 @@
 }
 
 .bodyfooter {
-  padding-top: 85px;
+  padding: 85px;
+  background-image: url("fade.jpg");
+  height: 100%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
 }
 
 h1 {
@@ -461,3 +468,18 @@ input[type="checkbox"]:checked + label {
   font-size: 14px;
   line-height: 16px;
 }
+
+.contactinfo p{
+  padding: 50px 0px 0px 0px;
+  font-size: 25px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  
+}
+
+.conttwo p{
+  font-size: 30px;
+}
+
+
